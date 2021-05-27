@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/bush-4.png-ee5e91d0dd03c55b0ebaafa950225e2a.stex"
+path="res://.import/dead-tree-tall.png-97dd08c42a45f0e1cfd4336e171d3745.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://bush-4.png"
-dest_files=[ "res://.import/bush-4.png-ee5e91d0dd03c55b0ebaafa950225e2a.stex" ]
+source_file="res://assets/dead-tree-tall.png"
+dest_files=[ "res://.import/dead-tree-tall.png-97dd08c42a45f0e1cfd4336e171d3745.stex" ]
 
 [params]
 

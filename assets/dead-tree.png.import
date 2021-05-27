@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/spurse.png-d82f19b99dfdac481de6c979dadd875c.stex"
+path="res://.import/dead-tree.png-fd8d35abc417b2b9172270e668f018cb.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://spurse.png"
-dest_files=[ "res://.import/spurse.png-d82f19b99dfdac481de6c979dadd875c.stex" ]
+source_file="res://assets/dead-tree.png"
+dest_files=[ "res://.import/dead-tree.png-fd8d35abc417b2b9172270e668f018cb.stex" ]
 
 [params]
 
