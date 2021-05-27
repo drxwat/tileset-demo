@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://tilesets/ground.tileset.tres" type="TileSet" id=1]
 [ext_resource path="res://tilesets/trees.tileset.tres" type="TileSet" id=2]
@@ -7,6 +7,8 @@
 [ext_resource path="res://env/LeavesEmiter.tscn" type="PackedScene" id=5]
 [ext_resource path="res://assets/cloud-1.png" type="Texture" id=6]
 [ext_resource path="res://shaders/wind.shader" type="Shader" id=7]
+[ext_resource path="res://env/Fire.tscn" type="PackedScene" id=8]
+[ext_resource path="res://assets/fireplace.png" type="Texture" id=9]
 
 [sub_resource type="ShaderMaterial" id=1]
 shader = ExtResource( 7 )
@@ -90,3 +92,48 @@ texture = ExtResource( 4 )
 [node name="CanvasModulate" type="CanvasModulate" parent="."]
 visible = false
 color = Color( 0.921569, 0.933333, 0.866667, 1 )
+
+[node name="fireplace" type="Sprite" parent="."]
+position = Vector2( 229.765, 63.1073 )
+texture = ExtResource( 9 )
+
+[node name="Fire" parent="fireplace" instance=ExtResource( 8 )]
+
+[node name="Fire" parent="." instance=ExtResource( 8 )]
+position = Vector2( 303.007, 66.1316 )
+
+[node name="Fire2" parent="." instance=ExtResource( 8 )]
+position = Vector2( 206.596, 2.56386 )
+
+[node name="Fire3" parent="." instance=ExtResource( 8 )]
+position = Vector2( 173.752, 84.1425 )
+
+[node name="Fire4" parent="." instance=ExtResource( 8 )]
+position = Vector2( 173.752, 25.3423 )
+
+[node name="Fire5" parent="." instance=ExtResource( 8 )]
+position = Vector2( 144.087, 24.2828 )
+
+[node name="Fire6" parent="." instance=ExtResource( 8 )]
+position = Vector2( 177.761, -5.46241 )
+
+[node name="Fire7" parent="." instance=ExtResource( 8 )]
+position = Vector2( 177.761, -5.46241 )
+
+[node name="Fire8" parent="." instance=ExtResource( 8 )]
+position = Vector2( 180.261, 41.0376 )
+
+[node name="Fire9" parent="." instance=ExtResource( 8 )]
+position = Vector2( 137.261, 41.0376 )
+
+[node name="Fire10" parent="." instance=ExtResource( 8 )]
+position = Vector2( 171.261, 3.53759 )
+
+[node name="Fire11" parent="." instance=ExtResource( 8 )]
+position = Vector2( 207.761, 20.0376 )
+
+[node name="Fire12" parent="." instance=ExtResource( 8 )]
+position = Vector2( 398.219, 150.607 )
+
+[node name="Fire13" parent="." instance=ExtResource( 8 )]
+position = Vector2( 429.738, 146.104 )
