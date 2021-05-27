@@ -86,3 +86,7 @@ lifetime = 50.0
 preprocess = 10.0
 process_material = SubResource( 2 )
 texture = ExtResource( 4 )
+
+[node name="CanvasModulate" type="CanvasModulate" parent="."]
+visible = false
+color = Color( 0.921569, 0.933333, 0.866667, 1 )
