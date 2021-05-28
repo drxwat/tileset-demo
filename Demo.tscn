@@ -154,7 +154,7 @@ position = Vector2( 429.738, 146.104 )
 
 [node name="Grass" type="Particles2D" parent="."]
 material = SubResource( 3 )
-position = Vector2( 895.601, 249.31 )
+position = Vector2( 865.255, 274.9 )
 amount = 500
 explosiveness = 1.0
 process_material = SubResource( 4 )
