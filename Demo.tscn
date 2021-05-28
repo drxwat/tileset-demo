@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=16 format=2]
 
 [ext_resource path="res://tilesets/ground.tileset.tres" type="TileSet" id=1]
 [ext_resource path="res://tilesets/trees.tileset.tres" type="TileSet" id=2]
@@ -9,6 +9,8 @@
 [ext_resource path="res://shaders/wind.shader" type="Shader" id=7]
 [ext_resource path="res://env/Fire.tscn" type="PackedScene" id=8]
 [ext_resource path="res://assets/fireplace.png" type="Texture" id=9]
+[ext_resource path="res://assets/grass-spritesheet.png" type="Texture" id=10]
+[ext_resource path="res://shaders/grass_particle.shader" type="Shader" id=11]
 
 [sub_resource type="ShaderMaterial" id=1]
 shader = ExtResource( 7 )
@@ -35,6 +37,18 @@ orbit_velocity = 0.0
 orbit_velocity_random = 0.0
 scale = 2.0
 scale_random = 0.5
+
+[sub_resource type="CanvasItemMaterial" id=3]
+particles_animation = true
+particles_anim_h_frames = 5
+particles_anim_v_frames = 1
+particles_anim_loop = false
+
+[sub_resource type="ShaderMaterial" id=4]
+shader = ExtResource( 11 )
+shader_param/spread = 3.5
+shader_param/rows = 30
+shader_param/amount = 600
 
 [node name="Demo" type="Node2D"]
 
@@ -137,3 +151,11 @@ position = Vector2( 398.219, 150.607 )
 
 [node name="Fire13" parent="." instance=ExtResource( 8 )]
 position = Vector2( 429.738, 146.104 )
+
+[node name="Grass" type="Particles2D" parent="."]
+material = SubResource( 3 )
+position = Vector2( 895.601, 249.31 )
+amount = 500
+explosiveness = 1.0
+process_material = SubResource( 4 )
+texture = ExtResource( 10 )
