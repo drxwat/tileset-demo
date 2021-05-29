@@ -38,6 +38,6 @@ float getWind(vec2 vertex, vec2 uv, float time){
 void vertex() {
     vec4 pos = WORLD_MATRIX * vec4(0.0, 0.0, 0.0, 1.0);
     //float time = TIME * speed + offset;
-    float time = TIME * speed - pos.x / 2.0; // not working when moving...
+    float time = TIME * speed - pos.x / 1.0; // not working when moving...
     VERTEX.x += getWind(VERTEX.xy, UV, time);
 }
